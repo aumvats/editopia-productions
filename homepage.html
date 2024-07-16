@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Document</title>
+    <link rel="stylesheet" href="new.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="new.js"></script>
+</head>
+<body>
+    <!-- First Section -->
+    
+    <section class="hero">
+    <!-- Existing content -->
+    <div class="logo-container">
+        <a href="https://codepen.io/OscarTBeamish/">
+            <img src="editopia logo black.png" alt="Your Logo">
+        </a>
+    </div>
+    <div class="title-container">
+        <h1>We are a <strong>video production agency</strong><br>
+        Redefining how your community sees you....</h1>
+    </div>
+    <div class="rectangle1">
+        <img src="editopia logo black.png" alt="Image">
+    </div>
+
+    <!-- New elements -->
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-cta">
+        <a href="#contact-section" class="cta-button">Get Started</a>
+    </div>
+</section>
+   
+<!-- Client Showcase Section -->
+<section class="client-showcase">
+    <h2>Our Past Clients</h2>
+    <div class="client-row">
+        <div class="client"><img src="curesee.png" alt="Client 1"></div>
+        <div class="client"><img src="curesee.png" alt="Client 2"></div>
+        <div class="client"><img src="boatlogo.avif" alt="Client 3"></div>
+        <div class="client"><img src="client4.jpg" alt="Client 4"></div>
+        <div class="client"><img src="client5.jpg" alt="Client 5"></div>
+    </div>
+    <div class="client-row reverse">
+        <div class="client"><img src="client6.jpg" alt="Client 6"></div>
+        <div class="client"><img src="client7.jpg" alt="Client 7"></div>
+        <div class="client"><img src="client8.jpg" alt="Client 8"></div>
+        <div class="client"><img src="client9.jpg" alt="Client 9"></div>
+        <div class="client"><img src="client10.jpg" alt="Client 10"></div>
+    </div>
+</section>
+
+    <!-- Second Section with Video on the left -->
+    <section class="cd-section visible">
+        <div class="video-content">
+            <div class="video-container">
+                <video controls autoplay muted>
+                    <source src="Ranveer Allahbadia .mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="description-container">
+                <h2>Want to give your content a makeover?</h2>
+                <p>We understand your content and make it stand out to grow your services organically.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Third Section with Video on the right -->
+    <section class="cd-section">
+        <div class="video-content reverse">
+            <div class="description-container-reverse">
+                <h2>Want to give your content a makeover?</h2>
+                <p>We understand your content and make it stand out to grow your services organically.</p>
+            </div>
+            <div class="video-container">
+                <video controls autoplay muted>
+                    <source src="utu-reel-competition.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fourth Section with Video on the left -->
+    <section class="cd-section">
+        <div class="video-content">
+            <div class="video-container">
+                <video controls autoplay muted>
+                    <source src="ZUAI.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="description-container">
+                <h2>Want to give your content a makeover?</h2>
+                <p>We understand your content and make it stand out to grow your services organically.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fifth Section with Video on the right -->
+    <section class="cd-section">
+        <div class="video-content reverse">
+            <div class="description-container-reverse">
+                <h2>Want to give your content a makeover?</h2>
+                <p>We understand your content and make it stand out to grow your services organically.</p>
+            </div>
+            <div class="video-container">
+                <video controls autoplay muted>
+                    <source src="MP,Gov.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>We'd love to hear from you. Drop us a line</p>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i>Noida Sector 128, Delhi NCR, India</li>
+                        <li><i class="fas fa-phone"></i>+91 1234567890</li>
+                        <li><i class="fas fa-envelope"></i>editopiaproduction@gmail.com</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
