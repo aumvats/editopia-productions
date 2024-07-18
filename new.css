@@ -204,21 +204,23 @@ html, body {
     margin-top: 0; /* Reduces top margin to minimize gap */
     padding: 0 0 1rem; /* Bottom padding inside h2 */
     font-size: 50px;
-    color: yellow; /* Ensure this matches your design */
+    color: #ffd600; /* Ensure this matches your design */
     text-transform: uppercase;
     font-weight: bold;
+    font-family: bugaki;
 }
 
 .description-container p {
     font-size: 30px;
     text-align: justify;
-    color: black; /* Set text color */
-    margin: 0; /* Reset default margins to remove the large gap */
+    color: #ffffff; 
+    margin: 0;
+    font-family: mont; 
 }
 
 .description-container-reverse {
     flex: 2;
-    color: white; /* Ensures text color is white for readability */
+    color: white; 
     margin-bottom: 40px; 
     padding: 20px; 
     margin-right: 60px;
@@ -232,14 +234,15 @@ html, body {
     text-transform: uppercase;
     font-weight: bold;
     margin-right: 80px;
+    font-family: bugaki;
     
 }
 
 .description-container-reverse p {
     font-size: 30px;
     text-align: justify;
-    color: black; /* Set text color */
-   
+    color: #ffffff; 
+    font-family: mont;   
 }
 
 
@@ -256,6 +259,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .cd-section h2 {
@@ -264,25 +268,22 @@ html, body {
     text-align: center;
 }
 
-.cd-section:nth-of-type(2) {
-    background-color: orangered;
-}
-
-.cd-section:nth-of-type(3) {
-    background-color: #2e5367;
-}
-
-.cd-section:nth-of-type(4) {
-    background-color: #267481;
+.cd-section:nth-of-type(6) {
+    background-color: #da362f;
 }
 
 .cd-section:nth-of-type(5) {
-    background-color: #fcb052;
+    background-color:#0D77B1;
 }
 
-.cd-section:nth-of-type(6) {
-    background-color: #f06a59;
+.cd-section:nth-of-type(4) {
+    background-color: #49b680;
 }
+
+.cd-section:nth-of-type(3) {
+    background-color: #96884f;
+}
+
 
 
 #contact-section {
