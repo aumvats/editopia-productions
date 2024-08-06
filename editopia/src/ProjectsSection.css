@@ -1,0 +1,96 @@
+.projects-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+  }
+  
+  .projects-header h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin: 0;
+    flex-basis: 40%;
+  }
+  
+  .projects-header p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    flex-basis: 50%;
+  }
+  
+  .projects-list {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 2rem;
+  }
+  
+  .project-card {
+    display: inline-block;
+    width: 80%;
+    max-width: 800px;
+    margin-right: 2rem;
+    white-space: normal;
+    vertical-align: top;
+  }
+  
+  .project-info {
+    margin-bottom: 1rem;
+  }
+  
+  .project-year {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .project-name {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+  }
+  
+  .project-description {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .view-case-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .project-image img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Add smooth scrolling for modern browsers */
+  @media (hover: hover) {
+    .projects-list {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .projects-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .projects-list {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
