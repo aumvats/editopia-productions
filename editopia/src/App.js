@@ -2,14 +2,16 @@ import React from 'react';
 import './App.css';
 import Hero from './Hero';
 import ComparisonSection from './ComparisonSection';
-import ProjectsSection from './ProjectsSection';
+import ProjectCard from './ProjectCard';
+import Footer from './Footer';
 
 function App() {
   return (
     <div className="App">
       <Hero />
       <ComparisonSection />
-      <ProjectsSection />
+      <ProjectCard />
+      <Footer />
     </div>
   );
 }

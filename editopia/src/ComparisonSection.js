@@ -9,22 +9,26 @@ const ComparisonSection = () => {
   };
 
   const negativeItems = [
-    { icon: '🔳', title: 'Generic Designs', description: 'Settling for uninspired templates, failing to differentiate your brand in a crowded market.' },
-    { icon: '❌', title: 'Poor User Experience', description: 'Teams not working together well, making it hard to achieve common goals and tasks.' },
-    { icon: '👁️', title: 'Low Visibility', description: 'Bad vibes at work make people unhappy, lowering how much work gets done.' },
-    { icon: '😕', title: 'Limited Functionality', description: 'People doing the wrong jobs arent happy, and it makes the work not so good.' },
-    { icon: '📅', title: 'Missed Deadlines', description: 'Work processes are done poorly, taking too much time and money due to inefficient methods.' },
-    { icon: '⚠️', title: 'Inadequate Support', description: 'People argue a lot, making it tough for the team to stay together and work well.' },
+    { icon: '👎', title: 'Generic Edits', description: 'Using basic, uninspiring edits that fail to capture the unique essence of the project.' },
+    { icon: '🚫', title: 'Poor Collaboration', description: 'Teams not communicating effectively, leading to mismatches in project goals.' },
+    { icon: '😕', title: 'Low Engagement', description: 'Content fails to engage the audience, resulting in low viewer retention and satisfaction.' },
+    { icon: '🐌', title: 'Delayed Deliveries', description: 'Inconsistent project timelines, causing late deliveries and client dissatisfaction.' },
+    { icon: '💸', title: 'Over Budget', description: 'Frequent overspending due to poor resource management and planning.' },
+    { icon: '🤦', title: 'Limited Creativity', description: 'Lack of creative direction, resulting in bland and unremarkable videos.' },
+    { icon: '😤', title: 'Technical Issues', description: 'Frequent technical glitches during editing that delay project completion.' }
   ];
+  
 
   const positiveItems = [
-    { icon: '✏️', title: 'Creative Expertise', description: 'Unique designs tailored to your brand, captivating users with innovative visuals.' },
-    { icon: '🔄', title: 'Responsive Designs', description: 'Ensuring seamless experiences across all devices, maximizing user engagement and satisfaction.' },
-    { icon: '🔍', title: 'SEO Optimization', description: 'Elevating your online presence with strategies that boost search engine rankings effectively.' },
-    { icon: '</>', title: 'Custom Solutions', description: 'Crafting bespoke websites that meet your specific needs, enhancing functionality and user experience.' },
-    { icon: '👍', title: 'Quick Turnaround', description: 'Meeting deadlines consistently, providing reliable services without compromising quality or efficiency.' },
-    { icon: '✅', title: 'Exceptional Support', description: 'Dedicated assistance during and after project completion, ensuring client satisfaction and success.' },
+    { icon: '🌟', title: 'Creative Storytelling', description: 'Crafting compelling narratives that resonate with audiences and enhance brand messaging.' },
+    { icon: '📱', title: 'High Engagement', description: 'Producing high-engagement content that captures and retains viewer attention.' },
+    { icon: '🚀', title: 'Quick Turnaround', description: 'Efficient editing processes that ensure timely delivery without compromising on quality.' },
+    { icon: '👁️', title: 'Advanced Techniques', description: 'Utilizing cutting-edge video editing techniques and technology to create visually stunning videos.' },
+    { icon: '💬', title: 'Excellent Communication', description: 'Maintaining open lines of communication throughout the project to ensure alignment with client visions.' },
+    { icon: '💡', title: 'Innovative Solutions', description: 'Providing creative solutions and ideas to enhance video content and achieve marketing goals.' },
+    { icon: '🛠️', title: 'Post-Production Support', description: 'Offering comprehensive post-production services including color grading, sound mixing, and visual effects.' }
   ];
+ 
 
   const items = isPositive ? positiveItems : negativeItems;
 
@@ -33,15 +37,16 @@ const ComparisonSection = () => {
         <section className="comparison-section">
           <div className="header-container">
             <h2>
-              When people
+              When people<br></br>
               <span className={isPositive ? 'positive' : 'negative'}>
                 {isPositive ? 'do' : "don't"}
+                <button className="toggle-button" onClick={toggleState}>
+                   <div className={`slider ${isPositive ? 'active' : ''}`}></div>
+                </button>
               </span>
               work with us.
             </h2>
-            <button className="toggle-button" onClick={toggleState}>
-              <div className={`slider ${isPositive ? 'active' : ''}`}></div>
-            </button>
+            
             <button className="cta-button">Let's build something</button>
           </div>
           <div className="items-grid">

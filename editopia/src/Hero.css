@@ -29,6 +29,7 @@
   .open-for-work {
     background-color: #e0f2f1;
     color: #00796b;
+    font-size: 200px;
   }
   
   .start-project {
@@ -68,4 +69,27 @@
     font-size: 1rem;
     border-radius: 25px;
     cursor: pointer;
+  }
+
+  .particle {
+    /* Setting the div to take full width */
+    width: 100%;
+    /* Fixed height as specified */
+    height: 500px;
+    /* Adding top and bottom margins */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* Adjusting the image to cover the entire div */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .particle img {
+    /* Making the image cover the div */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
   }

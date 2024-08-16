@@ -1,96 +1,65 @@
+/* Main container for the section */
 .projects-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
-    font-family: Arial, sans-serif;
-  }
-  
-  .projects-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 3rem;
-  }
-  
-  .projects-header h2 {
-    font-size: 3.5rem;
-    font-weight: 600;
-    margin: 0;
-    flex-basis: 40%;
-  }
-  
-  .projects-header p {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.6;
-    flex-basis: 50%;
-  }
-  
-  .projects-list {
-    overflow-x: auto;
-    white-space: nowrap;
-    padding-bottom: 2rem;
-  }
-  
-  .project-card {
-    display: inline-block;
-    width: 80%;
-    max-width: 800px;
-    margin-right: 2rem;
-    white-space: normal;
-    vertical-align: top;
-  }
-  
-  .project-info {
-    margin-bottom: 1rem;
-  }
-  
-  .project-year {
-    font-size: 0.9rem;
-    color: #666;
-  }
-  
-  .project-name {
-    font-size: 2rem;
-    font-weight: 600;
-    margin: 0.5rem 0;
-  }
-  
-  .project-description {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 1rem;
-  }
-  
-  .view-case-btn {
-    background-color: #f0f0f0;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  
-  .project-image img {
-    width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-  
-  /* Add smooth scrolling for modern browsers */
-  @media (hover: hover) {
-    .projects-list {
-      scroll-behavior: smooth;
-    }
-  }
-  
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  .projects-list::-webkit-scrollbar {
-    display: none;
-  }
-  
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .projects-list {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for the project card */
+.project-card {
+  display: flex;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;  /* Ensures nothing spills outside the border */
+}
+
+/* Container for text information */
+.project-info {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Vertically center the content */
+  flex: 1;
+}
+
+/* Project title */
+.project-name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 1rem 0;  /* Adjusting margin to remove unnecessary space */
+}
+
+/* Description of the project */
+.project-description {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;  /* Remove default margins */
+}
+
+/* Button for viewing the project or case */
+.view-case-btn {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.4rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 2rem;  /* Add space above the button */
+}
+
+/* Adjusting the image container */
+.project-image {
+  width: 50%;  /* Explicit width for image container */
+  position: relative;  /* Set position context for absolute positioning of child elements */
+}
+
+/* Image styling */
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Ensure image covers the area */
+}
