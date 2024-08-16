@@ -1,0 +1,51 @@
+
+/* Footer.css */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Aesthetic and clean font */
+  font-size: 24px; /* Increased font size */
+  font-weight: bold; /* Making the font bold */
+  padding: 20px 20px 60px 20px; /* Padding inside the footer */
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto 60px auto; /* Pushes the footer up from the bottom */
+  text-align: center;
+  border-radius: 20px; /* Rounded corners */
+  box-sizing: border-box;
+  position: relative; /* Ensures footer is positioned in flow */
+  bottom: 0; /* Aligns the footer to the bottom */
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  margin:  15px;
+  
+  font-size: 16px; /* Adjusted for aesthetic compatibility */
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.button-style {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white; /* Adds a white border */
+  padding: 10px 20px; /* Increased padding for better visual */
+  font-size: 25px; /* Font size for button */
+  cursor: pointer;
+  margin-top: 20px; /* Adds space between button and link */
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+
+.button-style:hover {
+  background-color: white; /* Changes background on hover */
+  color: black; /* Changes text color on hover */
+}
