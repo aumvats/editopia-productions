@@ -1,0 +1,75 @@
+.project-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.project-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  width: 80%;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.project-info {
+  max-width: 40%;
+}
+
+.year {
+  color: #8a8a8a;
+  font-size: 16px;
+  margin: 0;
+}
+
+.title {
+  color: #6b6b6b;
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.description {
+  color: #000;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.view-case-button {
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 8px;
+  color: #6b6b6b;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-case-button:hover {
+  background-color: #e2e2e2;
+}
+
+.project-video {
+  max-width: 55%;
+  border-radius: 12px;
+  overflow: hidden;
+  height: auto;
+}
+
+.project-video iframe {
+  width: 450px;
+  
+  height: 650px; /* Adjusted height to match a 9:16 ratio */
+  border-radius: 12px;
+}

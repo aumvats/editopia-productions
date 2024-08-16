@@ -1,0 +1,65 @@
+/* Main container for the section */
+.projects-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for the project card */
+.project-card {
+  display: flex;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;  /* Ensures nothing spills outside the border */
+}
+
+/* Container for text information */
+.project-info {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Vertically center the content */
+  flex: 1;
+}
+
+/* Project title */
+.project-name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 1rem 0;  /* Adjusting margin to remove unnecessary space */
+}
+
+/* Description of the project */
+.project-description {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;  /* Remove default margins */
+}
+
+/* Button for viewing the project or case */
+.view-case-btn {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.4rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 2rem;  /* Add space above the button */
+}
+
+/* Adjusting the image container */
+.project-image {
+  width: 50%;  /* Explicit width for image container */
+  position: relative;  /* Set position context for absolute positioning of child elements */
+}
+
+/* Image styling */
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Ensure image covers the area */
+}
