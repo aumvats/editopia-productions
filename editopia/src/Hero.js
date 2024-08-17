@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero.css';
 import logo from '/editopia-productions/editopia/src/logo_editopia.jpg';
+import particle from '/editopia-productions/editopia/src/particle.jpg';
 
 const Hero = () => {
   return (
@@ -30,7 +31,7 @@ const Hero = () => {
 
         <div className='particle'>
          
-          <img src='https://www.pexels.com/photo/abstract-dark-background-with-human-hand-trace-5691695/' alt='particle' />
+          {<img src={particle} alt='particle' />}
 
         </div>
       </main>
